@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+header{
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  height: 100vh;
+  color: white;
+  display: flex;
+  gap: 26px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.isaac {
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.explore-button {
+  color: rgb(7, 75, 95);
+  font-weight: bold;
+  font-size: 16px;
+  padding: 11px 20px;
+  border: none;
+  border-radius: 5px;
+}
+
+.explore-button:hover {
+  background-color: #074b5f;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 27px;
+  text-align: center;
+  white-space: normal;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  padding: 70px 20px;
+}
+
+section div {
+  line-height: 25px;
+}
+
+.My-vision-section {
+  background-color: rgb(245, 243, 243);
+}
+
+footer {
+  background-color: black;
+  text-align: center;
+  color: white;
+  padding: 25px 200px;
+}
+
+@media (max-width: 630px) {
+  footer {
+    padding: 25px 20px;
+  }
+}
