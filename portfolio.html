@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: arial, sans-serif;
+      }
+
+      body {
+        font-family: Arial, Sans-serif;
+        background-color: rgb(255, 242, 242);
+        line-height: 1.6;
+      }
+
+      header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        background-color: black;
+        color: white;
+        padding: 20px 135px;
+        white-space: nowrap;
+      }
+
+      .navigation {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .nav-link {
+        text-decoration: none;
+        color: white;
+        font-size: 16px;
+        margin-left: 25px;
+        transition: color 0.3s;
+      }
+
+      .nav-link:hover {
+        color: #00bcd4;
+        cursor: pointer;
+      }
+
+      #about-link {
+        margin-left: 0;
+      }
+
+      section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .section-1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        background: linear-gradient(to right, #00bcd4, #2196f3);
+        height: 90vh;
+      }
+
+      .hero01 {
+        font-weight: bold;
+        margin-bottom: 0px;
+        font-size: 3rem;
+      }
+
+      .Hire-Me {
+        background-color: white;
+        color: #2196f3;
+        border: none;
+        margin-top: 19px;
+        font-weight: bold;
+        font-size: 16px;
+        padding: 14px 25px;
+        border-radius: 5px;
+        transition: background-color 0.3s, color 0.3s, font-weight 0.3s;
+      }
+
+      .Hire-Me:hover {
+        background-color: black;
+        color: white;
+        font-weight: bold;
+      }
+
+      .section-2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        white-space: normal;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        padding: 60px 10%;
+      }
+
+      .about-me {
+        font-size: 2rem;
+        font-weight: bold;
+        padding-bottom: 28px;
+      }
+
+      .introduction {
+        text-align: center;
+        line-height: 26px;
+        font-size: 16px;
+      }
+
+      .section-3 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 60px 10%;
+      }
+
+      .my-skills {
+        font-size: 2rem;
+        font-weight: bold;
+        margin-bottom: 20px;
+      }
+
+      .skills-link {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+      }
+
+      .html,
+      .css,
+      .javascript {
+        background-color: #2196f3;
+        color: white;
+        padding: 9px 20px;
+        border-radius: 19px;
+      }
+
+      .responsive-design {
+        background-color: #2196f3;
+        color: white;
+        padding: 10px 17px;
+        width: 180px;
+        border-radius: 19px;
+      }
+
+      .git {
+        background-color: #2196f3;
+        color: white;
+        padding: 10px 17px;
+        width: 125px;
+        border-radius: 19px;
+      }
+
+      .section-4 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 60px 10%;
+      }
+
+      .my-projects {
+        font-size: 2rem;
+        font-weight: bold;
+        margin-bottom: 20px;
+      }
+
+      .projects-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+        flex-wrap: wrap;
+      }
+
+      .projects-container div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        border: none;
+        box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+        border-radius: 8px;
+        width: 250px;
+        transition: 0.3s;
+      }
+
+      .landing-container:hover,
+      .login-container:hover,
+      .portfolio-website-container:hover {
+        transform: translateY(-5px);
+      }
+
+      .project-title {
+        font-weight: bold;
+        font-size: 19px;
+      }
+
+      .section-5 {
+        margin-bottom: 50px;
+      }
+
+      .section-5 h1 {
+        margin-bottom: 25px;
+      }
+
+      .section-5 div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .section-6 {
+        background-color: rgb(19, 18, 18);
+        color: white;
+        text-align: center;
+        padding: 20px 200px;
+        white-space: nowrap;
+      }
+
+      @media (max-width: 768px) {
+        header {
+          flex-direction: column;
+          align-items: center;
+        }
+        .section-1 .hero01 {
+          font-size: 2rem;
+          margin-bottom: 5px;
+        }
+        .projects-container {
+          flex-direction: column;
+          align-items: center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+      <header class="hero">
+        <nav>
+          <h2>Isaac</h2>
+        </nav>
+
+        <div class="hero-content">
+          <h1>Hi, I'm Isaac</h1>
+          <p>Future Full Stack Developer building peaceful systems with code.</p>
+          <a href="#projects" class="btn">View My Work</a>
+        </div>
+      </header>
+
+    <section class="section-1">
+      <div class="hero01">Hi, I'm Isaac 👋</div>
+      <div class="hero02">A passionate Frontend Developer from Nigeria.</div>
+      <a href="#contact">
+        <button class="Hire-Me">Hire Me</button>
+      </a>
+    </section>
+
+    <section id="about" class="section-2">
+      <div class="about-me">About Me</div>
+      <div class="introduction">I am a creative and detail-oriented frontend developer who loves building responsive and user-friendly websites. I enjoy turning ideas into real, interactive web experiences.</div>
+    </section>
+
+    <section id="skills" class="section-3">
+      <h2 class="my-skills">My Skills</h2>
+      <div  class="skills-link">
+        <div class="html">HTML</div>
+        <div class="css">CSS</div>
+        <div class="javascript">JavaScript</div>
+        <div class="responsive-design">Responsive Design</div>
+        <div class="git">Git & GitHub</div>
+      </div>
+    </section>
+
+    <section id="projects" class="section-4">
+      <div class="my-projects">My Projects</div>
+      <div class="projects-container">
+        <div class="landing-container">
+          <div class="project-title"><a href="personal landing page/landingpage.html">Landing Page</a></div>
+          <div>
+            A modern responsive landing page built with HTML & CSS.
+          </div>
+        </div>
+        <div class="login-container">
+          <div class="project-title">Login Form</div>
+          <div>
+            A clean login and signup UI with validation styling.
+          </div>
+        </div>
+        <div class="portfolio-website-container">
+          <div class="project-title">Portfolio Website</div>
+          <div>This personal portfolio website you are viewing now.</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section-5">
+      <h1>Contact Me</h1>
+      <div>
+        <div>Email: isaacachoche22@gmail.com</div>
+        <div>Location: Nigeria</div>
+      </div>
+    </section>
+
+    <section class="section-6">
+      <div>
+        © 2026 Isaac Handsome. All Rights Reserved.
+      </div>
+    </section>
+  </body>
+</html>

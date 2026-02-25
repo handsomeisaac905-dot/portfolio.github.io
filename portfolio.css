@@ -1,0 +1,255 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: arial, sans-serif;
+}
+
+body {
+  font-family: Arial, Sans-serif;
+  background-color: rgb(255, 242, 242);
+  line-height: 1.6;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: slideUp 2.0s ease forwards;
+  animation-delay: 0.2s;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateX(-1400px);
+  }
+  to {
+      opacity: 1;
+      transform: translateX(0);
+  }
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  color: white;
+  padding: 20px 135px;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+  margin-left: 25px;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: #00bcd4;
+  cursor: pointer;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background: linear-gradient(to right, #00bcd4, #2196f3);
+  height: 90vh;
+}
+
+.hero01 {
+  font-weight: bold;
+  margin-bottom: 0px;
+  font-size: 3rem;
+}
+
+.Hire-Me {
+  background-color: white;
+  color: #2196f3;
+  border: none;
+  margin-top: 19px;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 14px 25px;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s, font-weight 0.3s;
+}
+
+.Hire-Me:hover {
+  background-color: black;
+  color: white;
+  font-weight: bold;
+}
+
+.section-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  white-space: normal;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  padding: 60px 10%;
+}
+
+.about-me {
+  font-size: 2rem;
+  font-weight: bold;
+  padding-bottom: 28px;
+}
+
+.introduction {
+  text-align: center;
+  line-height: 26px;
+  font-size: 16px;
+}
+
+.section-3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 10%;
+}
+
+.my-skills {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.skills-link {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.html,
+.css,
+.javascript {
+  background-color: #2196f3;
+  color: white;
+  padding: 9px 20px;
+  border-radius: 19px;
+}
+
+.responsive-design {
+  background-color: #2196f3;
+  color: white;
+  padding: 10px 17px;
+  width: 180px;
+  border-radius: 19px;
+}
+
+.git {
+  background-color: #2196f3;
+  color: white;
+  padding: 10px 17px;
+  width: 125px;
+  border-radius: 19px;
+}
+
+.section-4 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 10%;
+}
+
+.my-projects {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.projects-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  text-decoration: none;
+}
+
+.projects-container div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  border: none;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  width: 250px;
+  transition: 0.3s;
+}
+
+.landing-container:hover,
+.login-container:hover,
+.portfolio-website-container:hover {
+  transform: translateY(-5px);
+}
+
+.project-title {
+  font-weight: bold;
+  font-size: 19px;
+}
+
+.projects-container div a {
+  text-decoration: none;
+}
+
+.section-5 {
+  margin-bottom: 50px;
+}
+
+.section-5 h1 {
+  margin-bottom: 25px;
+}
+
+.section-5 div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section-6 {
+  background-color: rgb(19, 18, 18);
+  color: white;
+  text-align: center;
+  padding: 20px 200px;
+  white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+  }
+  .section-1 .hero01 {
+    font-size: 2rem;
+    margin-bottom: 5px;
+  }
+  .projects-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
